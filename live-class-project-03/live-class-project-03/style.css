@@ -9,62 +9,88 @@
 
 /* ---------- NAVBAR ------------ */
 
- .navbar{
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
-  margin-top: 20px;
-  background-color: #423822;
- }
+  padding: 40px 100px;
+}
 
- .list{
+.list{
   display: flex;
+  color: white;
+  gap: 50px;
   list-style: none;
-  gap: 20px;
-  color:white;
-  font-size: 16px;
-  cursor: pointer;
+}
 
- }
+.logo{
+  width: 120px;
+}
 
- .logo{
-  margin-left: 250px;
- }
+.list-item {
+  margin-right: 30px;
+  color: #929191;
+}
 
- .button-small{
-  margin-right: 250px;
+.list-item:hover{
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.button-small {
+  font-size: 17px;
+  color: #788021;
+  background: transparent;
+  border: 1px solid #788021;
   padding: 8px 15px;
- }
+  border-radius: 8px;
+}
 
- 
-
-/* ------------------------------ */
-/* ---------- HERO ------------ */
+/*HERO SECTION*/
 
 .hero{
   display: flex;
-  justify-content: center;
-  gap: 200px;
+  flex-direction: column;
+
 }
 
+.text{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 70px;
+}
 
 .hero-heading{
-  display: inline;
   font-size: 52px;
-  background-color:#423822;
   color: white;
-}
-
-.hero-body{
-  float: right;
-  margin-top: 0;
+  width: 60%;
+  margin-left: 100px;
 }
 
 p{
-  display: inline;
-  margin-top: 0;
-  background-color: #423822;
   color: white;
+  font-size: 18px;
+  width: 35%;
+  line-height: 30px;
 }
 
+.image-justice{
+  background: url(./assets/justice.jpg) no-repeat center center;
+  background-size: 100%;
+  flex-grow: 1;
+  margin-top: 70px;
+}
+
+.bottom{
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
